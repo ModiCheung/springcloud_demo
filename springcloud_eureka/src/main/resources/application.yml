@@ -1,0 +1,14 @@
+server:
+  port: 6868  #eureka的通用端口
+spring:
+  application:
+    name: springcloud-eureka
+
+eureka:
+  client:
+    registerWithEureka: false #此模块不注册到Eureka
+    fetchRegistry: false  #是否从Eureka中获取注册信息？？？
+  servicUrl:
+    defaultZone: http://localhost:8000/eureka/
+
+
